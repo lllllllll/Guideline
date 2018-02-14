@@ -1,0 +1,7 @@
+@mixin root(){
+    --primari: $primary;
+    --secondary: $secondary;
+    --support-yellow: $support-yellow;
+    --support-pink: $support-pink;
+    --dark: $dark;
+}

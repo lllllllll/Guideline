@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    size: 0;
+}
+
+:root {
+    @include root();
+}
+
+html {
+    @include root();
+}
+html, body {
+    height: 100%;
+}
+.ka-dody {
+    display: flex;
+    flex: 1 1;
+    > div {
+        
+    }
+    >.sidebar-left {
+        width: 282px;
+        background: #ff0;
+    }
+    >.sidebar-component {
+        width: 100%;
+        background: #f00;
+    }
+}
