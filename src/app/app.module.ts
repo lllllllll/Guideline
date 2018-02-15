@@ -1,9 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { SidebarLeftComponent } from './shares/sidebar-left/sidebar-left.component';
+
+const appRoutes: Routes = [
+  { path: 'dashboard', component: DashboardComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+  // { path: '**', component: PageNotFoundComponent }
+];
 
 @NgModule({
   declarations: [
@@ -12,7 +19,11 @@ import { SidebarLeftComponent } from './shares/sidebar-left/sidebar-left.compone
     SidebarLeftComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

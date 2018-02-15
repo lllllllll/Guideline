@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     size: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -24,7 +25,7 @@ html, body {
         width: 282px;
         background: #ff0;
     }
-    >.sidebar-component {
+    >.detail-component {
         width: 100%;
         background: #f00;
     }
