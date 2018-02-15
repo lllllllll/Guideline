@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { SidebarLeftComponent } from './shares/sidebar-left/sidebar-left.component';
+import { MenuComponent } from './component/menu/menu.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -16,7 +17,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     DashboardComponent,
-    SidebarLeftComponent
+    SidebarLeftComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

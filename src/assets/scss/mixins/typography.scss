@@ -1,0 +1,9 @@
+@mixin typo($data){
+    @each $key, $val in $data {
+        $i: unquote('#{$key}, .#{$key}');
+
+        #{$i} {
+            font-size: rem($val);
+        }
+    }
+}

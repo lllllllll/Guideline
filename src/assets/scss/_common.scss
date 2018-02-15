@@ -1,20 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    size: 0;
-    font-family: 'Roboto', sans-serif;
-}
 
-:root {
-    @include root();
-}
-
-html {
-    @include root();
-}
-html, body {
-    height: 100%;
-}
 .ka-dody {
     display: flex;
     flex: 1 1;
@@ -22,11 +6,9 @@ html, body {
         
     }
     >.sidebar-left {
-        width: 282px;
-        background: #ff0;
+        min-height: 640px;
     }
     >.detail-component {
         width: 100%;
-        background: #f00;
     }
 }

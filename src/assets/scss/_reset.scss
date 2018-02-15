@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  size: 0;
+  font-family: $font-family, sans-serif;
+  box-sizing: inherit;
+  &:before,
+  &:after {
+    box-sizing: inherit
+  }
+}
+
+:root {
+  @include root();
+}
+
+html {
+  font-size: $font-base;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration-skip: ink;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  td,
+  th {
+    padding: 0;
+    text-align: left;
+  }
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+    display: block;
+}
+  

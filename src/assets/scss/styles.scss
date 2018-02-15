@@ -1,12 +1,14 @@
-//@import './mixins';
-@import './mixins/root';
+@import 'variables';
 
-//@import './functions';
+// Fonction
+@import './functions/all';
 
-@import './variables';
-
-//@import './mixins';
+// Mixin
+@import './mixins/all';
 
 // incluce common
+@import './reset';
 @import './common';
 
+// Component
+@import './components/all';
