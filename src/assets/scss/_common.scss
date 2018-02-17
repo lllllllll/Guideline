@@ -1,14 +1,70 @@
-
 .ka-dody {
-    display: flex;
-    flex: 1 1;
-    > div {
-        
+  display: flex;
+  flex: 1 1;
+  >div {}
+  >.sidebar-left {
+    @include color-primary($primary);
+    border-left: 5px solid;
+    a {
+      font-size: rem(14);
+      color: $light;
     }
-    >.sidebar-left {
-        min-height: 640px;
+  }
+  >.detail-component {
+    width: 100%;
+  }
+}
+
+.sidebar-detail {
+  >.ka-logo {
+    text-align: center;
+    padding: rem(20) 0;
+  }
+  .ka-menu {
+      >.title {
+        padding-left: rem(15);
+        color: $primary-30;
+        text-transform: uppercase;
+        margin-bottom: rem(12);
+        font-size: rem(14);
+      }
+      li {
+          padding-left: rem(15);
+      }
+  }
+  hr {
+    margin: rem(16) 0;
+    border: none;
+    border-top: 1px solid $secondary;
+    border-bottom: 1px solid tint($primary, 16%);
+  }
+}
+
+.main-detail {
+  min-height: rem(860);
+}
+
+.ka-component {
+  padding-top: rem(60);
+  h1 {
+    padding-bottom: rem(32);
+    margin-bottom: rem(32);
+    position: relative;
+    color: $secondary;
+    font-weight: $font-black;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: $dark-30;
+      height: rem(5);
+      width: rem(80);
     }
-    >.detail-component {
-        width: 100%;
-    }
+  }
+  &._620 {
+    width: rem(660);
+    margin: 0 auto;
+  }
 }

@@ -3,6 +3,24 @@ $secondary: #0e3f75;
 $support-yellow: #eaae1b;
 $support-pink: #fa52ff;
 $dark: #112333;
+$light: #fff;
 
 $font-family: 'Roboto';
 $font-base: 16;
+
+$primary-70: tint($primary, 32%);
+$primary-30: tint($primary, 72%);
+$primary-8: tint($primary, 92%);
+
+$secondary-70: tint($secondary, 32%);
+$secondary-30: tint($secondary, 72%);
+$secondary-8: tint($secondary, 92%);
+
+$dark-70: tint($dark, 32%);
+$dark-30: tint($dark, 72%);
+$dark-8: tint($dark, 92%);
+
+$font-thin: 100;
+$font-light: 300;
+$font-bold: 700;
+$font-black: 900;

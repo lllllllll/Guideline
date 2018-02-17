@@ -4,11 +4,19 @@ a {
   display: block;
 }
 
-$typo-header-list:(
-    h1: 36,
-    h2: 28,
-    h3: 21,
-    h4: 18
-);
+$typo-header-list:(h1: 36, h2: 28, h3: 21, h4: 18);
 
 @include typo($typo-header-list);
+
+.title-1 {
+    font-size: rem(72);
+    font-weight: $font-thin;
+}
+.title-2 {
+    font-size: rem(60);
+    font-weight: $font-thin;
+}
+.title-3 {
+    font-size: rem(48);
+    font-weight: $font-light;
+}

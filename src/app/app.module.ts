@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { SidebarLeftComponent } from './shares/sidebar-left/sidebar-left.component';
 import { MenuComponent } from './component/menu/menu.component';
+import { FooterComponent } from './shares/footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -18,13 +19,14 @@ const appRoutes: Routes = [
     AppComponent,
     DashboardComponent,
     SidebarLeftComponent,
-    MenuComponent
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      appRoutes
+      // { enableTracing: true } // <-- debugging purposes only
     )
   ],
   providers: [],

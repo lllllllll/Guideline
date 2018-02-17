@@ -1,7 +1,8 @@
 <div class="ka-menu">
-  <h1>Menu</h1>
+  <div class="title">
+    {{title}}
+  </div>
   <ul>
-    <li><a href="#">Color palette</a></li>
-    <li><a href="#">Typography</a></li>
+    <li *ngFor="let items of menuList"><a routerLink="{{items.linke}}" title="{{items.text}}">{{items.text}}</a></li>
   </ul>
 </div>

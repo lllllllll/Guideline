@@ -1,4 +1,8 @@
 <div class="sidebar-detail">
-  <app-menu></app-menu>
+  <div class="h1 ka-logo">
+    <img src="./assets/images/logo/logo.png" alt="">
+  </div>
+  <app-menu [title]="'Foundations'" [menuList]="linkModel"></app-menu>
+  <hr>
+  <app-menu [title]="'Components'" [menuList]="component"></app-menu>
 </div>
-

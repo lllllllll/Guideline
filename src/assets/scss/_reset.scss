@@ -4,6 +4,7 @@
   size: 0;
   font-family: $font-family, sans-serif;
   box-sizing: inherit;
+  color: $dark;
   &:before,
   &:after {
     box-sizing: inherit
@@ -48,6 +49,7 @@ table {
     text-align: left;
   }
 }
+
 article,
 aside,
 figure,
@@ -55,6 +57,5 @@ footer,
 header,
 hgroup,
 section {
-    display: block;
+  display: block;
 }
-  
