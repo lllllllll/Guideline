@@ -36,15 +36,15 @@ export class SidebarLeftComponent implements OnInit {
     },
     {
       text: 'Forms',
-      linke: 'form'
+      linke: 'forms'
     },
     {
       text: 'Dropdown',
       linke: 'dropdown'
     },
     {
-      text: 'Navbas',
-      linke: 'navbar'
+      text: 'Navbars',
+      linke: 'navbars'
     },
     {
       text: 'Menu',
@@ -55,12 +55,12 @@ export class SidebarLeftComponent implements OnInit {
       linke: 'modal'
     },
     {
-      text: 'Tabs',
-      linke: 'tabs'
+      text: 'Table',
+      linke: 'table'
     },
     {
-      text: 'Table',
-      linke: 'icons'
+      text: 'Tabs',
+      linke: 'tabs'
     }
   ];
 

@@ -5,6 +5,7 @@
   >.sidebar-left {
     @include color-primary($primary);
     border-left: 5px solid;
+    width: rem(282);
     a {
       font-size: rem(14);
       color: $light;
@@ -21,22 +22,17 @@
     padding: rem(20) 0;
   }
   .ka-menu {
+      margin-bottom: 32px;
       >.title {
-        padding-left: rem(15);
+        padding-left: rem(22);
         color: $primary-30;
         text-transform: uppercase;
         margin-bottom: rem(12);
         font-size: rem(14);
       }
       li {
-          padding-left: rem(15);
+          padding-left: rem(28);
       }
-  }
-  hr {
-    margin: rem(16) 0;
-    border: none;
-    border-top: 1px solid $secondary;
-    border-bottom: 1px solid tint($primary, 16%);
   }
 }
 

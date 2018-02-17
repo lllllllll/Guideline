@@ -6,14 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  @Input() menuList;
-  @Input() title;
-
   constructor() {
   }
 
   ngOnInit() {
-    // console.log('>> ', this.menuList);
   }
 
 }
