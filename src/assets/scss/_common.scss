@@ -3,7 +3,7 @@
   flex: 1 1;
   >div {}
   >.sidebar-left {
-    @include color-primary($primary);
+    background: $secondary;
     border-left: 5px solid;
     width: rem(282);
     a {
@@ -12,6 +12,7 @@
     }
   }
   >.detail-component {
+    background: $dark-8;
     width: 100%;
   }
 }
@@ -22,17 +23,18 @@
     padding: rem(20) 0;
   }
   .ka-menu {
-      margin-bottom: 32px;
-      >.title {
-        padding-left: rem(22);
-        color: $primary-30;
-        text-transform: uppercase;
-        margin-bottom: rem(12);
-        font-size: rem(14);
-      }
-      li {
-          padding-left: rem(28);
-      }
+    margin-bottom: 32px;
+    >.title {
+      padding-left: rem(22);
+      color: $secondary-70;
+      text-transform: uppercase;
+      margin-bottom: rem(12);
+      font-size: rem(14);
+      font-weight: $font-bold;
+    }
+    li {
+      padding-left: rem(28);
+    }
   }
 }
 
@@ -42,9 +44,9 @@
 
 .ka-component {
   padding-top: rem(60);
-  h1 {
-    padding-bottom: rem(32);
-    margin-bottom: rem(32);
+  >h1 {
+    padding-bottom: rem(42);
+    margin-bottom: rem(42);
     position: relative;
     color: $secondary;
     font-weight: $font-black;
@@ -59,8 +61,92 @@
       width: rem(80);
     }
   }
+  >h2 {
+    margin-bottom: rem(26);
+    position: relative;
+    color: $secondary;
+    font-weight: $font-bold;
+  }
   &._620 {
     width: rem(660);
     margin: 0 auto;
   }
+}
+
+.ka-example {}
+
+.ex-code {
+  min-height: rem(220);
+  padding: rem(32) rem(22) rem(22) rem(22);
+  border: rem(2) solid $dark-30;
+  border-radius: rem(3);
+  position: relative;
+  &:before {
+    padding: rem(3) rem(12) rem(3) rem(20);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: rem(6);
+    content: "example";
+    color: $dark-30;
+    position: absolute;
+    top: rem(-12);
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: $dark-8;
+    z-index: 1;
+  }
+}
+
+.ka-footer {
+  width: 100%;
+  height: rem(320);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.detail-header {
+    text-align: center;
+    img {
+    }
+}
+
+.ka-color {
+    >.colors {
+        border-radius: rem(6);
+        background: $secondary-30;
+        min-height: rem(140);
+        margin-bottom: rem(6);
+    }
+    p {
+        color: $secondary;
+        font-weight: $font-bold;
+    }
+    span {
+        font-size: rem(12);
+    }
+    >._primary {
+        background-color: $primary;
+    }
+    >._secondary {
+        background-color: $secondary;
+    }
+    >._dark {
+        background-color: $dark;
+    }
+    >._support-yellow {
+        background-color: $support-yellow;
+    }
+    >._support-pink {
+        background-color: $support-pink;
+    }
+    >._primary-70 {
+        background-color: $primary-70;
+    }
+    >._primary-30 {
+        background-color: $primary-30;
+    }
+    >._primary-8 {
+        background-color: $primary-8;
+    }
 }
