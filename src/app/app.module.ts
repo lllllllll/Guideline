@@ -1,44 +1,57 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+
+// pages
+import { BreadcrumbComponent } from './pages/breadcrumb/breadcrumb.component';
+import { ButtonLinkComponent } from './pages/button-link/button-link.component';
+import { ColorPaletteComponent } from './pages/color-palette/color-palette.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { DropdownComponent } from './pages/dropdown/dropdown.component';
+import { FormsComponent } from './pages/forms/forms.component';
+import { IconsComponent } from './pages/icons/icons.component';
+import { LogoGuidelineComponent } from './pages/logo-guideline/logo-guideline.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { ModalComponent } from './pages/modal/modal.component';
+import { NavbarsComponent } from './pages/navbars/navbars.component';
+import { TableComponent } from './pages/table/table.component';
+import { TypographyComponent } from './pages/typography/typography.component';
+import { TabsComponent } from './pages/tabs/tabs.component';
+
+// shares
 import { SidebarLeftComponent } from './shares/sidebar-left/sidebar-left.component';
-import { MenuComponent } from './component/menu/menu.component';
 import { FooterComponent } from './shares/footer/footer.component';
-import { LogoGuilelineComponent } from './component/logo-guileline/logo-guileline.component';
-import { ColorComponent } from './component/color/color.component';
-import { TypographyComponent } from './component/typography/typography.component';
-import { IconComponent } from './component/icon/icon.component';
-import { ButtonsComponent } from './component/buttons/buttons.component';
-import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
-import { FormsComponent } from './component/forms/forms.component';
-import { DropdownComponent } from './component/dropdown/dropdown.component';
-import { NavbarsComponent } from './component/navbars/navbars.component';
-import { ModalsComponent } from './component/modals/modals.component';
-import { TabsComponent } from './component/tabs/tabs.component';
-import { TableComponent } from './component/table/table.component';
-import { MenuSharsComponent } from './shares/menu-shars/menu-shars.component';
+
+// component
+import { KaTableComponent } from './component/ka-table/ka-table.component';
+import { KaBreadcrumbComponent } from './component/ka-breadcrumb/ka-breadcrumb.component';
+import { KaButtonComponent } from './component/ka-button/ka-button.component';
+import { KaDropdownComponent } from './component/ka-dropdown/ka-dropdown.component';
+import { KaFormsComponent } from './component/ka-forms/ka-forms.component';
+import { KaIconComponent } from './component/ka-icon/ka-icon.component';
+import { KaMenusComponent } from './component/ka-menus/ka-menus.component';
+import { KaModalComponent } from './component/ka-modal/ka-modal.component';
+import { KaTabsComponent } from './component/ka-tabs/ka-tabs.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
 
   // foundations
-  { path: 'logoguideline', component: LogoGuilelineComponent },
-  { path: 'colorpalette', component: ColorComponent },
+  { path: 'logoguideline', component: LogoGuidelineComponent },
+  { path: 'colorpalette', component: ColorPaletteComponent },
   { path: 'typogrphy', component: TypographyComponent },
-  { path: 'icons', component: IconComponent },
+  { path: 'icons', component: IconsComponent },
 
   // Components
-  { path: 'buttonandlink', component: ButtonsComponent },
+  { path: 'button-link', component: ButtonLinkComponent },
   { path: 'breadcrumb', component: BreadcrumbComponent },
   { path: 'forms', component: FormsComponent },
   { path: 'dropdown', component: DropdownComponent },
   { path: 'navbars', component: NavbarsComponent },
   { path: 'menu', component: MenuComponent },
-  { path: 'modal', component: ModalsComponent },
+  { path: 'modal', component: ModalComponent },
   { path: 'table', component: TableComponent },
   { path: 'tabs', component: TabsComponent }
 ];
@@ -46,23 +59,34 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
+    // shares
     SidebarLeftComponent,
-    MenuComponent,
     FooterComponent,
-    LogoGuilelineComponent,
-    ColorComponent,
-    TypographyComponent,
-    IconComponent,
-    ButtonsComponent,
+    // pages
     BreadcrumbComponent,
-    FormsComponent,
+    ButtonLinkComponent,
+    ColorPaletteComponent,
+    DashboardComponent,
     DropdownComponent,
+    FormsComponent,
+    IconsComponent,
+    LogoGuidelineComponent,
+    MenuComponent,
+    ModalComponent,
     NavbarsComponent,
-    ModalsComponent,
-    TabsComponent,
     TableComponent,
-    MenuSharsComponent
+    TypographyComponent,
+    TabsComponent,
+    // component
+    KaTableComponent,
+    KaBreadcrumbComponent,
+    KaButtonComponent,
+    KaDropdownComponent,
+    KaFormsComponent,
+    KaIconComponent,
+    KaMenusComponent,
+    KaModalComponent,
+    KaTabsComponent
   ],
   imports: [
     BrowserModule,

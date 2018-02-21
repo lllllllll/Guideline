@@ -28,7 +28,7 @@ export class SidebarLeftComponent implements OnInit {
   public component = [
     {
       text: 'Buttons and Link',
-      linke: 'buttonandlink'
+      linke: 'button-link'
     },
     {
       text: 'Breadcrumb',

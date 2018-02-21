@@ -1,0 +1,65 @@
+%setOutline {
+    border-width: rem(2);
+    background: transparent;
+    font-weight: $font-black;
+    font-size: rem(18);
+}
+.button {
+  padding: rem(2) rem(16);
+  height: rem(38);
+  border: rem(1) solid transparent;
+  border-radius: rem(3);
+  background: $light;
+  color: $primary;
+  font-size: rem(16);
+  font-weight: $font-bold;
+  letter-spacing: rem(1);
+  text-align: center;
+  position: relative;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  &._primary {
+    background: $primary;
+    color: $light;
+  }
+  &._secondary {
+    background: $secondary;
+    color: $light;
+  }
+  &._link {
+    background: transparent;
+    color: $secondary;
+    font-weight: $font-regular;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &._primary-outline {
+    @extend %setOutline;
+    border-color: $primary-70;
+    color: $primary;
+  }
+  &._secondary-outline {
+    @extend %setOutline;
+    color: $secondary;
+    border-color: $secondary-70;
+  }
+  &._defualf-outline {
+    @extend %setOutline;
+    border-color: $dark-30;
+    color: $dark-70;
+  }
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}
