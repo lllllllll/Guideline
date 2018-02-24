@@ -1,3 +1,41 @@
-<p>
-  forms works!
-</p>
+<div class="_fluid">
+  <div class="detail-header">
+  </div>
+  <div class="_container main-detail">
+    <div class="ka-component _620">
+      <h1 class="_text-center">Forms</h1>
+      <p>
+        Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+      </p>
+    </div>
+    <div class="ka-component _620">
+      <h2 class="">Input</h2>
+      <p>
+        Documentation and examples typography, headings, body text, lists, and more.
+      </p>
+    </div>
+    <div class="ka-component ka-example">
+      <div class="ex-code">
+        <div class="row">
+          <div class="column">
+            <ka-forms [title]="'Full Name'" [model]="model" [type]="'text'" required></ka-forms>
+          </div>
+          <div class="column">
+            <ka-forms [title]="'User'" [model]="model2" [type]="'text'"></ka-forms>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <ka-forms [title]="'Password'" [model]="model3" [type]="'text'"></ka-forms>
+          </div>
+          <div class="column">
+            <ka-forms [title]="'Confirm Password'" [model]="model3" [type]="'text'"></ka-forms>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

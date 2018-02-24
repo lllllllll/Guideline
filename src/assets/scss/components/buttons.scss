@@ -1,5 +1,4 @@
 %setOutline {
-    border-width: rem(2);
     background: transparent;
     font-weight: $font-black;
     font-size: rem(18);
@@ -28,13 +27,22 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  &:focus, &:active {
+    background: $primary-8;
+  }
   &._primary {
     background: $primary;
     color: $light;
+    &:focus, &:active {
+      background: $primary-70;
+    }
   }
   &._secondary {
     background: $secondary;
     color: $light;
+    &:focus, &:active {
+      background: $secondary-70;
+    }
   }
   &._link {
     background: transparent;
@@ -61,5 +69,16 @@
   }
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
+  }
+  &.disabled, &:disabled {
+    background: $secondary-30;
+    opacity: .5;
+    color: $light;
+    border-color: transparent;
+    
+    cursor: default;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

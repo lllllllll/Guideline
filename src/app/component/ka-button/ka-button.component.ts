@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ka-button',
@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KaButtonComponent implements OnInit {
 
+  @Input() type;
+  @Input() disabled;
+
   constructor() { }
 
   ngOnInit() {
+    if (this.disabled === '') {
+      this.disabled = true;
+    }
   }
 
 }

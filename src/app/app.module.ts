@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // pages
 import { BreadcrumbComponent } from './pages/breadcrumb/breadcrumb.component';
@@ -33,6 +34,7 @@ import { KaIconComponent } from './component/ka-icon/ka-icon.component';
 import { KaMenusComponent } from './component/ka-menus/ka-menus.component';
 import { KaModalComponent } from './component/ka-modal/ka-modal.component';
 import { KaTabsComponent } from './component/ka-tabs/ka-tabs.component';
+
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -93,7 +95,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
       // { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    FormsModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
