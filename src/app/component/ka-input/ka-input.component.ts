@@ -1,11 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'ka-forms',
-  templateUrl: './ka-forms.component.html'
+  selector: 'ka-input',
+  templateUrl: './ka-input.component.html'
 })
-export class KaFormsComponent implements OnInit {
+export class KaInputComponent implements OnInit {
 
   @Input() title;
   @Input() type;

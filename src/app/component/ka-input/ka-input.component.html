@@ -1,0 +1,10 @@
+<div class="ka-form" >
+    <input (click)="toggleClick()" (blur)="toggleBlur()" (focus)="toggleClick()" type="{{type}}"
+            [(ngModel)]="model"
+            id="{{gName}}"
+            name="{{gName}}"
+            autocomplete="off"
+            [required]="required">
+    <label for="{{gName}}" [ngClass]="{'_valid': aClass}">{{title}}</label>
+  </div>
+  

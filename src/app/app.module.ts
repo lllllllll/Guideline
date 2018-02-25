@@ -29,11 +29,15 @@ import { KaTableComponent } from './component/ka-table/ka-table.component';
 import { KaBreadcrumbComponent } from './component/ka-breadcrumb/ka-breadcrumb.component';
 import { KaButtonComponent } from './component/ka-button/ka-button.component';
 import { KaDropdownComponent } from './component/ka-dropdown/ka-dropdown.component';
-import { KaFormsComponent } from './component/ka-forms/ka-forms.component';
 import { KaIconComponent } from './component/ka-icon/ka-icon.component';
 import { KaMenusComponent } from './component/ka-menus/ka-menus.component';
 import { KaModalComponent } from './component/ka-modal/ka-modal.component';
 import { KaTabsComponent } from './component/ka-tabs/ka-tabs.component';
+import { KaTextareaComponent } from './component/ka-textarea/ka-textarea.component';
+import { KaInputComponent } from './component/ka-input/ka-input.component';
+import { KaCheckboxComponent } from './component/ka-checkbox/ka-checkbox.component';
+import { KaRadioComponent } from './component/ka-radio/ka-radio.component';
+import { KaSelectComponent } from './component/ka-select/ka-select.component';
 
 
 const appRoutes: Routes = [
@@ -84,11 +88,15 @@ const appRoutes: Routes = [
     KaBreadcrumbComponent,
     KaButtonComponent,
     KaDropdownComponent,
-    KaFormsComponent,
     KaIconComponent,
     KaMenusComponent,
     KaModalComponent,
-    KaTabsComponent
+    KaTabsComponent,
+    KaTextareaComponent,
+    KaInputComponent,
+    KaCheckboxComponent,
+    KaRadioComponent,
+    KaSelectComponent
   ],
   imports: [
     BrowserModule,
