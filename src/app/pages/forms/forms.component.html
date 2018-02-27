@@ -16,25 +16,93 @@
     </div>
     <div class="ka-component ka-example">
       <div class="ex-code">
-        <div class="row">
+        <div class="row _mg-b32">
           <div class="column">
-            <ka-input [title]="'Full Name'" [model]="model" [type]="'text'" required></ka-input>
+            <ka-input title="Full Name" [model]="model" type="text" required></ka-input>
           </div>
           <div class="column">
-            <ka-input [title]="'User'" [model]="model2" [type]="'text'"></ka-input>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <ka-input [title]="'Password'" [model]="model3" [type]="'text'"></ka-input>
-          </div>
-          <div class="column">
-            <ka-input [title]="'Confirm Password'" [model]="model3" [type]="'text'"></ka-input>
+            <ka-input title="User" [model]="model2" type="text"></ka-input>
           </div>
         </div>
-
-
-
+        <div class="row _mg-b32">
+          <div class="column">
+            <ka-input title="Password" [model]="model3" type="text"></ka-input>
+          </div>
+          <div class="column">
+            <ka-input title="Confirm Password" [model]="model3" type="text"></ka-input>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ka-component _620">
+      <h2 class="">Checkbox</h2>
+      <p>
+        Documentation and examples typography, headings, body text, lists, and more.
+      </p>
+    </div>
+    <div class="ka-component ka-example">
+      <div class="ex-code">
+        <div class="row">
+          <div class="column">
+            <ka-checkbox [model]="model" title="Person"></ka-checkbox>
+          </div>
+          <div class="column">
+            <ka-checkbox [model]="" title="Company"></ka-checkbox>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ka-component _620">
+      <h2 class="">Radio</h2>
+      <p>
+        Documentation and examples typography, headings, body text, lists, and more.
+      </p>
+    </div>
+    <div class="ka-component ka-example">
+      <div class="ex-code">
+        <div class="row">
+          <div class="column">
+            <ka-radio [model]="radio" title="Male" groupName="gender" [value]="1"></ka-radio>
+          </div>
+          <div class="column">
+            <ka-radio [model]="radio" title="Female" groupName="gender" [value]="2"></ka-radio>
+          </div>
+          <div class="column">
+            <ka-radio [model]="radio" title="Nosure" groupName="gender" [value]="3"></ka-radio>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ka-component _620">
+      <h2 class="">Textarea</h2>
+      <p>
+        Documentation and examples typography, headings, body text, lists, and more.
+      </p>
+    </div>
+    <div class="ka-component ka-example">
+      <div class="ex-code">
+        <div class="row">
+          <div class="column">
+            <ka-textarea [model]="model.address" title="Address" rows=""></ka-textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ka-component _620">
+      <h2 class="">Select</h2>
+      <p>
+        Documentation and examples typography, headings, body text, lists, and more.
+      </p>
+    </div>
+    <div class="ka-component ka-example">
+      <div class="ex-code">
+        <div class="row">
+          <div class="column">
+            <div class="ka-form _select">
+              
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
-<p>
-  ka-radio works!
-</p>
+<div class="ka-form _radio">
+  <input type="radio" [(ngModel)]="model" [value]="value" [name]="groupName" [id]="gName"  [required]="required">
+  <label class="radio" [for]="gName">{{title}}</label>
+</div>

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 export class FormsComponent implements OnInit {
 
   model = 'YAKA Chang';
+  radio = 1;
+
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,4 @@
-<p>
-  ka-textarea works!
-</p>
+<div class="ka-form _textarea">
+  <textarea (click)="toggleClick()" (blur)="toggleBlur()" (focus)="toggleClick()" [(ngModel)]="model" [name]="nClass" [id]="nClass" [rows]="rows" [required]="required"></textarea>
+  <label [ngClass]="{'_valid': valid}" [for]="nClass">{{title}}</label>
+</div>

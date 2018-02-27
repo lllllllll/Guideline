@@ -6,6 +6,7 @@
 .button {
   padding: rem(2) rem(16);
   height: rem(38);
+  line-height: rem(32);
   border: rem(1) solid transparent;
   border-radius: rem(3);
   background: $light;
@@ -66,6 +67,11 @@
     @extend %setOutline;
     border-color: $dark-30;
     color: $dark-70;
+  }
+  &._primary._block, &._secondary._block, &._defualf._block, &._link._block,
+  &._primary-outline._block, &._secondary-outline._block, &._defualf-outline._block {
+    display: block !important;
+    width: 100% !important;
   }
   &:not(:disabled):not(.disabled) {
     cursor: pointer;

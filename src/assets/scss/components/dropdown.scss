@@ -1,0 +1,21 @@
+.ka-dropdown {
+    >._secondary-outline {
+        text-align: left;
+        background: $light;
+    }
+    >.list {
+        border: rem(1) solid $dark-30;
+        border-radius: rem(3);
+        background: $light;
+        padding: rem(6) 0;
+        a {
+            text-decoration: none !important;
+            text-align: left;
+            transition: .2s;
+            &:hover {
+                background: $secondary-8;
+                transition: .2s;
+            }
+        }
+    }
+}
