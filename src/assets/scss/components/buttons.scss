@@ -1,9 +1,15 @@
 %setOutline {
-    background: transparent;
-    font-weight: $font-black;
-    font-size: rem(18);
+  background: transparent;
+  font-weight: $font-black;
+  font-size: rem(18);
 }
-.button {
+
+%setFocus {
+  border: rem(1) solid $primary;
+  box-shadow: 0 0 0 rem(3) $primary-30;
+}
+
+.ka-button {
   padding: rem(2) rem(16);
   height: rem(38);
   line-height: rem(32);
@@ -28,20 +34,26 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  &:focus, &:active {
-    background: $primary-8;
+  outline: none;
+  &:focus,
+  &:active {
+    @extend %setFocus;
   }
   &._primary {
     background: $primary;
     color: $light;
-    &:focus, &:active {
+    &:focus,
+    &:active {
+      @extend %setFocus;
       background: $primary-70;
     }
   }
   &._secondary {
     background: $secondary;
     color: $light;
-    &:focus, &:active {
+    &:focus,
+    &:active {
+      @extend %setFocus;
       background: $secondary-70;
     }
   }
@@ -52,36 +64,59 @@
     &:hover {
       text-decoration: underline;
     }
+    &:focus,
+    &:active {
+      @extend %setFocus;
+      text-decoration: underline;
+      color: $primary;
+    }
   }
   &._primary-outline {
     @extend %setOutline;
     border-color: $primary-70;
     color: $primary;
+    &:focus,
+    &:active {
+      @extend %setFocus;
+    }
   }
   &._secondary-outline {
     @extend %setOutline;
     color: $secondary;
     border-color: $secondary-70;
+    &:focus,
+    &:active {
+      @extend %setFocus;
+    }
   }
   &._defualf-outline {
     @extend %setOutline;
     border-color: $dark-30;
     color: $dark-70;
+    &:focus,
+    &:active {
+      @extend %setFocus;
+    }
   }
-  &._primary._block, &._secondary._block, &._defualf._block, &._link._block,
-  &._primary-outline._block, &._secondary-outline._block, &._defualf-outline._block {
+  &._primary._block,
+  &._secondary._block,
+  &._defualf._block,
+  &._link._block,
+  &._primary-outline._block,
+  &._secondary-outline._block,
+  &._defualf-outline._block {
     display: block !important;
     width: 100% !important;
   }
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
   }
-  &.disabled, &:disabled {
+  &.disabled,
+  &:disabled {
     background: $secondary-30;
     opacity: .5;
     color: $light;
     border-color: transparent;
-    
     cursor: default;
     &:hover {
       text-decoration: none;

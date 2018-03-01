@@ -1,21 +1,33 @@
 .ka-dropdown {
-    >._secondary-outline {
-        text-align: left;
-        background: $light;
+  >.ka-button {
+    text-align: left;
+  }
+  >._secondary-outline {
+      background: $light;
+  }
+  >.list {
+    margin-top: rem(3);
+    border-radius: rem(3);
+    background: $light;
+    padding: rem(6) 0;
+    border: rem(1) solid $primary;
+    box-shadow: 0 0 0 rem(3) $primary-30;
+    a {
+      text-decoration: none !important;
+      text-align: left;
+      transition: .2s;
+      &:hover {
+        background: $secondary-8;
+        transition: .2s;
+      }
+      &:focus,
+      &:active {
+        background: $secondary-8;
+        border-color: transparent;
+        box-shadow: none;
+        text-decoration: underline;
+        color: $primary;
+      }
     }
-    >.list {
-        border: rem(1) solid $dark-30;
-        border-radius: rem(3);
-        background: $light;
-        padding: rem(6) 0;
-        a {
-            text-decoration: none !important;
-            text-align: left;
-            transition: .2s;
-            &:hover {
-                background: $secondary-8;
-                transition: .2s;
-            }
-        }
-    }
+  }
 }
