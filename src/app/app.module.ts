@@ -39,6 +39,9 @@ import { KaCheckboxComponent } from './component/ka-checkbox/ka-checkbox.compone
 import { KaRadioComponent } from './component/ka-radio/ka-radio.component';
 import { KaSelectComponent } from './component/ka-select/ka-select.component';
 
+// dropdown
+import { DropdownDirective } from './directives/dropdown.directive';
+
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -96,7 +99,10 @@ const appRoutes: Routes = [
     KaInputComponent,
     KaCheckboxComponent,
     KaRadioComponent,
-    KaSelectComponent
+    KaSelectComponent,
+
+    // dropdown
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
