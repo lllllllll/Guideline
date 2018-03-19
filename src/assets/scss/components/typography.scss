@@ -1,19 +1,24 @@
 a {
   color: $primary;
   text-decoration: none;
-  display: block;
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+  }
 }
 
 $typo-header-list:(h1: 36, h2: 28, h3: 21, h4: 18);
-
 @include typo($typo-header-list);
-
 .title-1 {
-    font-size: rem(72);
+  font-size: rem(72);
 }
+
 .title-2 {
-    font-size: rem(60);
+  font-size: rem(60);
 }
+
 .title-3 {
-    font-size: rem(48);
+  font-size: rem(48);
 }

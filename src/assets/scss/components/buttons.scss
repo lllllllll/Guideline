@@ -5,8 +5,39 @@
 }
 
 %setFocus {
-  border: rem(1) solid $primary;
+  border: rem(1) solid $primary-70;
   box-shadow: 0 0 0 rem(3) $primary-30;
+}
+
+%primaryOutline {
+  @extend %setOutline;
+  border-color: $primary-70;
+  color: $primary;
+  &:focus,
+  &:active {
+    @extend %setFocus;
+  }
+}
+
+%secondaryOutline {
+  @extend %setOutline;
+  color: $secondary;
+  border-color: $secondary-70;
+  &:focus,
+  &:active {
+    @extend %setFocus;
+  }
+}
+
+%defualfOutline {
+  @extend %setOutline;
+  border-color: $dark-30;
+  color: $dark-70;
+  &:focus,
+  &:active {
+    border-color: $primary-70;
+    @extend %setFocus;
+  }
 }
 
 .ka-button {
@@ -72,31 +103,37 @@
     }
   }
   &._primary-outline {
-    @extend %setOutline;
-    border-color: $primary-70;
-    color: $primary;
-    &:focus,
-    &:active {
-      @extend %setFocus;
-    }
+    @extend %primaryOutline;
   }
   &._secondary-outline {
-    @extend %setOutline;
-    color: $secondary;
-    border-color: $secondary-70;
-    &:focus,
-    &:active {
-      @extend %setFocus;
-    }
+    @extend %secondaryOutline;
   }
   &._defualf-outline {
-    @extend %setOutline;
-    border-color: $dark-30;
-    color: $dark-70;
-    &:focus,
-    &:active {
-      @extend %setFocus;
-    }
+    @extend %defualfOutline;
+  }
+  &._primary-outline-2 {
+    border-width: rem(2);
+    @extend %primaryOutline;
+  }
+  &._secondary-outline-2 {
+    border-width: rem(2);
+    @extend %secondaryOutline;
+  }
+  &._defualf-outline-2 {
+    border-width: rem(2);
+    @extend %defualfOutline;
+  }
+  &._primary-outline-bg {
+    background-color: #fff;
+    @extend %primaryOutline;
+  }
+  &._secondary-outline-bg {
+    background-color: #fff;
+    @extend %secondaryOutline;
+  }
+  &._defualf-outline-bg {
+    background-color: #fff;
+    @extend %defualfOutline;
   }
   &._primary._block,
   &._secondary._block,

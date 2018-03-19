@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class KaDropdownComponent implements OnInit {
 
-  @Input() style;
+  @Input() kaStyle;
   @Input() model;
 
   constructor() { }

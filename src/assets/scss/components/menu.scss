@@ -1,12 +1,10 @@
 .ka-menu {
-    min-width: rem(220);
-
-    .title {
-        
+  min-width: rem(220);
+  .title {}
+  li {
+    a {
+      display: block;
+      padding: rem(8) rem(12);
     }
-    li {
-        a {
-            padding: rem(8) rem(12);
-        }
-    }
+  }
 }

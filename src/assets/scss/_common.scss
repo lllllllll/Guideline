@@ -5,11 +5,7 @@
   >.sidebar-left {
     background: $secondary;
     border-left: 5px solid;
-    width: rem(282);
-    a {
-      font-size: rem(14);
-      color: $light;
-    }
+    min-width: rem(282);
   }
   >.detail-component {
     background: $dark-8;
@@ -34,6 +30,20 @@
     }
     li {
       padding-left: rem(28);
+      padding-right: rem(16);
+      a {
+        font-size: rem(14);
+        color: $light;
+        border: rem(1) solid transparent;
+        border-radius: rem(1); //color: $primary;
+        &.active,
+        &:focus {
+          // border-color: $primary-70;
+          // box-shadow: 0 0 0 rem(3) $primary-30;
+          color: $primary;
+          background: $secondary-8;
+        }
+      }
     }
   }
 }
@@ -111,47 +121,46 @@
 }
 
 .detail-header {
-    text-align: center;
-    img {
-    }
+  text-align: center;
+  img {}
 }
 
 .ka-color {
-    >.colors {
-        border-radius: rem(6);
-        background: $secondary-30;
-        min-height: rem(140);
-        margin-bottom: rem(6);
-    }
-    p {
-        color: $secondary;
-        font-weight: $font-bold;
-    }
-    span {
-        font-size: rem(12);
-    }
-    >._primary {
-        background-color: $primary;
-    }
-    >._secondary {
-        background-color: $secondary;
-    }
-    >._dark {
-        background-color: $dark;
-    }
-    >._support-yellow {
-        background-color: $support-yellow;
-    }
-    >._support-pink {
-        background-color: $support-pink;
-    }
-    >._primary-70 {
-        background-color: $primary-70;
-    }
-    >._primary-30 {
-        background-color: $primary-30;
-    }
-    >._primary-8 {
-        background-color: $primary-8;
-    }
+  >.colors {
+    border-radius: rem(6);
+    background: $secondary-30;
+    min-height: rem(140);
+    margin-bottom: rem(6);
+  }
+  p {
+    color: $secondary;
+    font-weight: $font-bold;
+  }
+  span {
+    font-size: rem(12);
+  }
+  >._primary {
+    background-color: $primary;
+  }
+  >._secondary {
+    background-color: $secondary;
+  }
+  >._dark {
+    background-color: $dark;
+  }
+  >._support-yellow {
+    background-color: $support-yellow;
+  }
+  >._support-pink {
+    background-color: $support-pink;
+  }
+  >._primary-70 {
+    background-color: $primary-70;
+  }
+  >._primary-30 {
+    background-color: $primary-30;
+  }
+  >._primary-8 {
+    background-color: $primary-8;
+  }
 }
