@@ -5,13 +5,12 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './ka-dropdown.component.html'
 })
 export class KaDropdownComponent implements OnInit {
-
+  // active = false;
   @Input() kaStyle;
   @Input() model;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

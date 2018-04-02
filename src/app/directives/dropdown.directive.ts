@@ -1,18 +1,20 @@
-import { Directive, ElementRef, HostListener, HostBinding, Input } from '@angular/core';
+import { Directive, ElementRef, HostListener, Renderer} from '@angular/core';
 
 @Directive({
   selector: '[dropdown]'
 })
 export class DropdownDirective {
+  active: boolean;
+
+  constructor(
+    private _elRef: ElementRef,
+    private _renderer: Renderer) {
+    console.log('!');
+  }
 
   @HostListener('click') public onClick(event: any): void {
-    console.log('Click');
+    this.active = !this.active;
+    this._renderer.setElementAttribute(this._elRef.nativeElement, 'open', '');
+    console.log('Click', this.active);
   }
-
-  @HostListener('blur') public onBlur(event: any): void {
-    console.log('Blur');
-  }
-
-  constructor() {}
-
 }

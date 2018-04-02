@@ -1,10 +1,30 @@
 .ka-dropdown {
   position: relative;
+  &[open] {
+    &:before {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      display: block;
+      cursor: default;
+      content: " ";
+      background-color: transparent;
+    }
+    >.list {
+      display: block !important;
+    }
+  }
   >.ka-button {
     text-align: left;
+    &.active~.ka-dropdown>.list {
+      display: block !important;
+    }
   }
   >._secondary-outline {
-      background: $light;
+    background: $light;
   }
   >.list {
     width: 100%;
@@ -15,7 +35,8 @@
     padding: rem(6) 0;
     border: rem(1) solid $primary;
     box-shadow: 0 0 0 rem(3) $primary-30;
-    //display: none;
+    display: none;
+    z-index: 99;
     &.show {
       display: block;
     }

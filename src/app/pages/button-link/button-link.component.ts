@@ -5,7 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './button-link.component.html'
 })
 export class ButtonLinkComponent implements OnInit {
-  ww: any = 'Yaka';
   constructor() { }
 
   ngOnInit() {
