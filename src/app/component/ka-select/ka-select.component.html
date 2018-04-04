@@ -1,3 +1,6 @@
-<p>
-  ka-select works!
-</p>
+<div class="ka-form _select">
+  <select name="" id="{{gName}}" [(ngModel)]="model" (click)="toggleClick()" (blur)="toggleBlur()" (focus)="toggleClick()" [required]="required">
+    <option *ngFor="let item of optionList" [ngValue]="item">{{item.Value}}</option>
+  </select>
+  <label for="{{gName}}" [ngClass]="{'_valid': aClass}">{{title}}</label>
+</div>
