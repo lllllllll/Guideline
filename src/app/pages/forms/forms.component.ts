@@ -17,7 +17,7 @@ export class FormsComponent implements OnInit {
     {Id: 5, Value: 'Select'}
   ];
 
-  models = { type : this.selectList[4]};
+  // models = { type : this.selectList[4]};
 
   constructor() { }
 
